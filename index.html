@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script class="pre" src="./dist/hello.all.min.js"></script>
+</head>
+
+<body>
+
+<h3>Testing hello.js and GitHub</h3>
+
+<button id='github' onclick="hello.login('github');">Login to GitHub!</button>
+<div id="result" class="content">
+
+<ol>
+<li><p>Open a command-line prompt.</p></li>
+<li>
+<p>Set your email address with the following command.</p>
+
+<pre class="command-line"><span class="command">git config --global user.email "<em>username</em>@users.noreply.github.com"</span>
+</pre>
+</li>
+<li>
+<p>Confirm that you have set your email address correctly with the following command.</p>
+
+<pre class="command-line"><span class="command">git config --global user.email</span>
+<span class="output"><span># </span><em>username</em>@users.noreply.github.com</span>
+</pre>
+</li>
+</ol>
+
+(Sample steps taken from <a href="https://help.github.com/articles/keeping-your-email-address-private#step-2-tell-git-to-use-your-private-email-address">this article</a>.)
+</div>
+<script class="pre">
+hello.on('auth.login', function(r){
+  // Get Profile
+  console.log("auth.login");
+  hello.api(r.network+':/me', function(p){
+    document.getElementById(r.network).innerHTML = "<img src='"+ p.thumbnail + "' width=24/>Connected to "+ r.network+" as " + p.name;
+    elements = document.getElementsByClassName("command-line");
+    // forEach doesn't work here? wtf.
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = elements[i].innerHTML.replace("username", p.name);
+    }
+  });
+});
+
+hello.init({
+  github : "28655eb119ee1050446e"
+},  {redirect_uri:'index.html', oauth_proxy : 'https://auth-server.herokuapp.com/proxy'});
+</script>
+
+</body>
+
+</html>

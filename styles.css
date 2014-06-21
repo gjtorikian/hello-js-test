@@ -1,0 +1,230 @@
+.content .intro,
+.markdown-body .intro,
+.prose-diff > .markdown-body .intro {
+  color: #666666;
+}
+.content pre.command-line,
+.markdown-body pre.command-line,
+.prose-diff > .markdown-body pre.command-line {
+  border: 2px solid #dddddd;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  -webkit-font-smoothing: auto;
+}
+.content pre.command-line em,
+.markdown-body pre.command-line em,
+.prose-diff > .markdown-body pre.command-line em {
+  color: #F9FE64;
+  font-style: italic;
+}
+.content pre.command-line .command:before,
+.markdown-body pre.command-line .command:before,
+.prose-diff > .markdown-body pre.command-line .command:before {
+  content: "$ ";
+}
+.content pre.command-line .comment,
+.markdown-body pre.command-line .comment,
+.prose-diff > .markdown-body pre.command-line .comment {
+  color: #ccc;
+}
+.content pre.command-line .output,
+.markdown-body pre.command-line .output,
+.prose-diff > .markdown-body pre.command-line .output {
+  color: #63E463;
+}
+.content pre.command-line .output span,
+.markdown-body pre.command-line .output span,
+.prose-diff > .markdown-body pre.command-line .output span {
+  position: fixed;
+  top: -1000px;
+  left: -1000px;
+}
+.content .alert,
+.markdown-body .alert,
+.prose-diff > .markdown-body .alert {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 12px;
+  color: #264c72;
+  border: 1px solid #97c1da;
+  border-radius: 3px;
+  background-color: #d8ebf8;
+  background: -moz-linear-gradient(#d8ebf8, #d0e3ef);
+  /* FF 3.6+ */
+
+  background: -webkit-linear-gradient(#d8ebf8, #d0e3ef);
+  /* Safari 5.1+, Chrome 10+ */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8ebf8', endColorstr='#d0e3ef')";
+  /* IE8+ */
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.content .alert + .alert,
+.markdown-body .alert + .alert,
+.prose-diff > .markdown-body .alert + .alert {
+  margin-top: 5px;
+}
+.content .alert > *:first-child,
+.markdown-body .alert > *:first-child,
+.prose-diff > .markdown-body .alert > *:first-child {
+  margin-top: 0;
+}
+.content .alert > *:last-child,
+.markdown-body .alert > *:last-child,
+.prose-diff > .markdown-body .alert > *:last-child {
+  margin-bottom: 0;
+}
+.content .alert.warning,
+.markdown-body .alert.warning,
+.prose-diff > .markdown-body .alert.warning {
+  color: #613A00;
+  background-color: #ffe3c8;
+  background: -moz-linear-gradient(#ffe3c8, #f5dac0);
+  /* FF 3.6+ */
+
+  background: -webkit-linear-gradient(#ffe3c8, #f5dac0);
+  /* Safari 5.1+, Chrome 10+ */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe3c8', endColorstr='#f5dac0')";
+  /* IE8+ */
+
+  border: 1px solid #dca874;
+}
+.content .alert.error,
+.markdown-body .alert.error,
+.prose-diff > .markdown-body .alert.error {
+  color: #9c2400;
+  background-color: #f8d8d8;
+  background: -moz-linear-gradient(#f8d8d8, #efd0d0);
+  /* FF 3.6+ */
+
+  background: -webkit-linear-gradient(#f8d8d8, #efd0d0);
+  /* Safari 5.1+, Chrome 10+ */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8d8d8', endColorstr='#efd0d0')";
+  /* IE8+ */
+
+  border: 1px solid #da9797;
+}
+.content .alert code,
+.markdown-body .alert code,
+.prose-diff > .markdown-body .alert code {
+  font-size: 12px;
+}
+.content div.helper,
+.markdown-body div.helper,
+.prose-diff > .markdown-body div.helper,
+.content div.platform-mac,
+.markdown-body div.platform-mac,
+.prose-diff > .markdown-body div.platform-mac,
+.content div.platform-windows,
+.markdown-body div.platform-windows,
+.prose-diff > .markdown-body div.platform-windows,
+.content div.platform-linux,
+.markdown-body div.platform-linux,
+.prose-diff > .markdown-body div.platform-linux,
+.content div.platform-all,
+.markdown-body div.platform-all,
+.prose-diff > .markdown-body div.platform-all {
+  margin: .7em 0;
+  position: relative;
+  border: 1px dashed;
+}
+.content div.helper h4.header,
+.markdown-body div.helper h4.header,
+.prose-diff > .markdown-body div.helper h4.header {
+  height: 30px;
+  border: 1px solid #eaeaea;
+  border-bottom-color: #cacaca;
+  margin: 0;
+  min-width: 100%;
+}
+.content div.helper h4.header a,
+.markdown-body div.helper h4.header a,
+.prose-diff > .markdown-body div.helper h4.header a {
+  display: block;
+  padding: 0 0 0 32px;
+  color: #777;
+  font-size: 12px;
+  line-height: 31px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.content div.helper div.content,
+.markdown-body div.helper div.content,
+.prose-diff > .markdown-body div.helper div.content {
+  padding: 20px;
+  border: solid #eaeaea;
+  border-width: 0 1px 1px 1px;
+}
+.content div.helper div.content > p:first-child,
+.markdown-body div.helper div.content > p:first-child,
+.prose-diff > .markdown-body div.helper div.content > p:first-child,
+.content div.helper div.content > h3:first-child,
+.markdown-body div.helper div.content > h3:first-child,
+.prose-diff > .markdown-body div.helper div.content > h3:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.content div.helper div.content > p:last-child,
+.markdown-body div.helper div.content > p:last-child,
+.prose-diff > .markdown-body div.helper div.content > p:last-child,
+.content div.helper div.content > blockquote:last-child,
+.markdown-body div.helper div.content > blockquote:last-child,
+.prose-diff > .markdown-body div.helper div.content > blockquote:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.content div.helper div.content blockquote,
+.markdown-body div.helper div.content blockquote,
+.prose-diff > .markdown-body div.helper div.content blockquote {
+  margin: .7em 0;
+}
+.content div.helper div.content img,
+.markdown-body div.helper div.content img,
+.prose-diff > .markdown-body div.helper div.content img {
+  max-width: 620px;
+}
+.content .markdown-body pre.command-line,
+.markdown-body .markdown-body pre.command-line,
+.prose-diff > .markdown-body .markdown-body pre.command-line {
+  border: 2px solid #dddddd;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  -webkit-font-smoothing: auto;
+}
+.content .markdown-body pre.command-line em,
+.markdown-body .markdown-body pre.command-line em,
+.prose-diff > .markdown-body .markdown-body pre.command-line em {
+  color: #F9FE64;
+  font-style: italic;
+}
+.content .markdown-body pre.command-line .command:before,
+.markdown-body .markdown-body pre.command-line .command:before,
+.prose-diff > .markdown-body .markdown-body pre.command-line .command:before {
+  content: "$ ";
+}
+.content .markdown-body pre.command-line .comment,
+.markdown-body .markdown-body pre.command-line .comment,
+.prose-diff > .markdown-body .markdown-body pre.command-line .comment {
+  color: #ccc;
+}
+.content .markdown-body pre.command-line .output,
+.markdown-body .markdown-body pre.command-line .output,
+.prose-diff > .markdown-body .markdown-body pre.command-line .output {
+  color: #63E463;
+}
+.content .markdown-body pre.command-line .output span,
+.markdown-body .markdown-body pre.command-line .output span,
+.prose-diff > .markdown-body .markdown-body pre.command-line .output span {
+  position: fixed;
+  top: -1000px;
+  left: -1000px;
+}
